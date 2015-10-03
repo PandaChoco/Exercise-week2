@@ -1,5 +1,5 @@
-int x =50;
-int i =1;
+int x =100;
+int i =50;
 void setup()
 {
   size(500, 500);
@@ -13,10 +13,10 @@ void draw()
   
   noStroke();
   fill(0);
-  ellipse(150,150,x,x);
-  ellipse(350,150,x,x);
-  x--;
-  
+  ellipse(150,150,x-i,x-i);
+  ellipse(350,150,x-i,x-i);
+  x++;
+  i+=2;
   
   noFill();
   stroke(0);
